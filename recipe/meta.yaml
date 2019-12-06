@@ -1,6 +1,6 @@
 {% set name = "pdfnofonts" %}
-{% set version = "1.0.0" %}
-{% set sha256 = "15f551b1cfc9aa5f34e02ef5201cc8658c0e0abe068be0b1c76de01c574c4e58" %}
+{% set version = "1.0.1" %}
+{% set sha256 = "9557aa15bca52fe53eaa24f73c191709e0061e2f5bbfef5bae3eabc0a6836b6e" %}
 
 package:
   name: {{ name|lower }}
