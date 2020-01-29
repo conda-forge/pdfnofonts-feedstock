@@ -1,6 +1,6 @@
 {% set name = "pdfnofonts" %}
-{% set version = "1.0.1" %}
-{% set sha256 = "9557aa15bca52fe53eaa24f73c191709e0061e2f5bbfef5bae3eabc0a6836b6e" %}
+{% set version = "1.1.0" %}
+{% set sha256 = "b288330262666230d93af6aed93425e3838f58ab4103d01cbd8765a4361f42e3" %}
 
 package:
   name: {{ name|lower }}
@@ -15,19 +15,20 @@ build:
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
   entry_points:
-    - pdfnofonts = pdfnofonts:main
+    - pdfnofonts = pdfnofonts.cli.pdfnofonts:main
 
 requirements:
   host:
     - python >=3
     - pip
-    - setuptools
   run:
     - python >=3
     - docopt
     - ghostscript
 
 test:
+  imports:
+    - pdfnofonts
   commands:
     - pdfnofonts --help
 
@@ -36,8 +37,8 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Script of remove fonts from PDF file (wrapper around GhostScript).'
-  description: 'Script of remove fonts from PDF file (wrapper around GhostScript).'
+  summary: 'Remove fonts from PDF file (wrapper around GhostScript).'
+  description: 'Remove fonts from PDF file (wrapper around GhostScript).'
   doc_url: https://github.com/tdegeus/pdfnofonts
   dev_url: https://github.com/tdegeus/pdfnofonts
 
