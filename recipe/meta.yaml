@@ -37,8 +37,8 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Script to remove fonts from PDF file (wrapper around GhostScript).'
-  description: 'Script to remove fonts from PDF file (wrapper around GhostScript).'
+  summary: 'Remove fonts from PDF file (wrapper around GhostScript).'
+  description: 'Remove fonts from PDF file (wrapper around GhostScript).'
   doc_url: https://github.com/tdegeus/pdfnofonts
   dev_url: https://github.com/tdegeus/pdfnofonts
 
